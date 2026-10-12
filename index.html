@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Organizador Gráfico</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap');
+
+  body {
+    background-color: #ecebe9;
+    font-family: 'Montserrat', sans-serif;
+    padding: 30px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 1200px;
+  }
+
+  .title-box {
+    background-color: #ffffff;
+    border: 1.5px solid #9fa3a9;
+    border-radius: 12px;
+    padding: 22px;
+    text-align: center;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+  }
+
+  .title-box h1 {
+    margin: 0;
+    font-size: 46px;
+    font-weight: 800;
+    color: #30333c;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border: 1px solid #9fa3a9;
+  }
+
+  th, td {
+    border: 1px solid #9fa3a9;
+    padding: 16px;
+    vertical-align: middle;
+  }
+
+  thead th {
+    font-size: 16px;
+    font-weight: 700;
+    color: #30333c;
+    text-align: center;
+    height: 38px;
+  }
+
+  /* Colores de encabezados igual a la imagen[cite: 1] */
+  .th-empty { background-color: #49505a; width: 15%; }
+  .th-sem1  { background-color: #fcca64; width: 18%; }
+  .th-sem2  { background-color: #a4e4f3; width: 18%; }
+  .th-sem3  { background-color: #f3a6f7; width: 18%; }
+  .th-sem4  { background-color: #c4fcb3; width: 18%; }
+  .th-res   { background-color: #b7b3fc; width: 13%; }
+
+  /* Columna de nombres */
+  .td-name {
+    background-color: #ffffff;
+    font-weight: 700;
+    font-size: 12.5px;
+    color: #30333c;
+    text-align: center;
+    line-height: 1.4;
+    height: 45px;
+  }
+
+  /* Colores pastel de las columnas */
+  .td-sem1 { background-color: #fcebc8; font-size: 13px; color: #30333c; text-align: center; }
+  .td-sem2 { background-color: #dcf5fb; font-size: 13px; color: #30333c; text-align: center; }
+  .td-sem3 { background-color: #fbe1fd; font-size: 13px; color: #30333c; text-align: center; }
+  .td-sem4 { background-color: #e6fde0; font-size: 13px; color: #30333c; text-align: center; }
+  .td-res  { background-color: #e4e1fe; font-size: 13px; font-weight: 600; color: #30333c; text-align: center; }
+
+  /* Ajustes para impresión / Guardar como PDF */
+  @media print {
+    body { background-color: #ffffff; padding: 0; }
+    * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="title-box">
+    <h1 contenteditable="true">ORGANIZADOR GRÁFICO</h1>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th class="th-empty"></th>
+        <th class="th-sem1" contenteditable="true">Semana 1</th>
+        <th class="th-sem2" contenteditable="true">Semana 2</th>
+        <th class="th-sem3" contenteditable="true">Semana 3</th>
+        <th class="th-sem4" contenteditable="true">Semana 4</th>
+        <th class="th-res" contenteditable="true">Total (Q100.00)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="td-name" contenteditable="true">VÍCTOR<br>(NOVIEMBRE)</td>
+        <td class="td-sem1" contenteditable="true"></td>
+        <td class="td-sem2" contenteditable="true"></td>
+        <td class="td-sem3" contenteditable="true"></td>
+        <td class="td-sem4" contenteditable="true"></td>
+        <td class="td-res" contenteditable="true"></td>
+      </tr>
+      <tr>
+        <td class="td-name" contenteditable="true">CARLOS<br>(DICIEMBRE)</td>
+        <td class="td-sem1" contenteditable="true"></td>
+        <td class="td-sem2" contenteditable="true"></td>
+        <td class="td-sem3" contenteditable="true"></td>
+        <td class="td-sem4" contenteditable="true"></td>
+        <td class="td-res" contenteditable="true"></td>
+      </tr>
+      <tr>
+        <td class="td-name" contenteditable="true">JACKELYN<br>(ENERO)</td>
+        <td class="td-sem1" contenteditable="true"></td>
+        <td class="td-sem2" contenteditable="true"></td>
+        <td class="td-sem3" contenteditable="true"></td>
+        <td class="td-sem4" contenteditable="true"></td>
+        <td class="td-res" contenteditable="true"></td>
+      </tr>
+      <tr>
+        <td class="td-name" contenteditable="true">MELISSA<br>(FEBRERO)</td>
+        <td class="td-sem1" contenteditable="true"></td>
+        <td class="td-sem2" contenteditable="true"></td>
+        <td class="td-sem3" contenteditable="true"></td>
+        <td class="td-sem4" contenteditable="true"></td>
+        <td class="td-res" contenteditable="true"></td>
+      </tr>
+      <tr>
+        <td class="td-name" contenteditable="true">NANCY<br>(MARZO)</td>
+        <td class="td-sem1" contenteditable="true"></td>
+        <td class="td-sem2" contenteditable="true"></td>
+        <td class="td-sem3" contenteditable="true"></td>
+        <td class="td-sem4" contenteditable="true"></td>
+        <td class="td-res" contenteditable="true"></td>
+      </tr>
+      <tr>
+        <td class="td-name" contenteditable="true">ANGELA<br>(ABRIL)</td>
+        <td class="td-sem1" contenteditable="true"></td>
+        <td class="td-sem2" contenteditable="true"></td>
+        <td class="td-sem3" contenteditable="true"></td>
+        <td class="td-sem4" contenteditable="true"></td>
+        <td class="td-res" contenteditable="true"></td>
+      </tr>
+      <tr>
+        <td class="td-name" contenteditable="true">DYLAN<br>(MAYO)</td>
+        <td class="td-sem1" contenteditable="true"></td>
+        <td class="td-sem2" contenteditable="true"></td>
+        <td class="td-sem3" contenteditable="true"></td>
+        <td class="td-sem4" contenteditable="true"></td>
+        <td class="td-res" contenteditable="true"></td>
+      </tr>
+      <tr>
+        <td class="td-name" contenteditable="true">LUIS<br>(JUNIO)</td>
+        <td class="td-sem1" contenteditable="true"></td>
+        <td class="td-sem2" contenteditable="true"></td>
+        <td class="td-sem3" contenteditable="true"></td>
+        <td class="td-sem4" contenteditable="true"></td>
+        <td class="td-res" contenteditable="true"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>
